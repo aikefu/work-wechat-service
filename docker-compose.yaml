@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    work-wechat-service:
+        image: 'haobing/work-wechat-service:1.0.0'
+        container_name: work-wechat-service
+        ports:
+            - '3000:3000'
+        environment:
+            - APP_NAME=${APP_NAME}
+            - APP_DEBUG=${APP_DEBUG}
+            - WORK_WECHAT_CORP_ID=${WORK_WECHAT_CORP_ID}
+            - WORK_WECHAT_APP_ID=${WORK_WECHAT_APP_ID}
+            - GPT_TENANT=${GPT_TENANT}
+            - GPT_SERVER=${GPT_SERVER}
+            - GPT_TOKEN=${GPT_TOKEN}

@@ -3,6 +3,7 @@ services:
     work-wechat-service:
         image: 'haobing/work-wechat-service:1.0.0'
         container_name: work-wechat-service
+        restart: unless-stopped
         ports:
             - '3000:3000'
         environment:

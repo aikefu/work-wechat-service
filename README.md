@@ -31,20 +31,18 @@ https://work.weixin.qq.com/ ，管理员扫描登录
 
 ![应用设置](./assets/20230917145910.png)
 
-获取 AgentID：
-
-- 填入 `.env` 中的 `WORK_WECHAT_APP_ID`
-- 配置到服务端的 app_id
-
-获取应用 Secret，配置到服务端的 app_secret
-
-![应用接收消息](./assets/image.png)
+- 获取 AgentID：
+  - 填入 `.env` 中的 `WORK_WECHAT_APP_ID`
+  - 配置到服务端的 app_id
+- 获取应用 Secret，配置到服务端的 app_secret
 
 添加可信IP，将页面拖到最下方
 
 ![企业可信IP](./assets/image-1.png)
 
 将服务部署服务器的公网 IP 填入。完成后，向上拖动，点击设置 API 接收
+
+![应用接收消息](./assets/image.png)
 
 ![API接收消息](./assets/image-2.png)
 
